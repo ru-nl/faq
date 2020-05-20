@@ -1,0 +1,10 @@
+User-agent: *
+Host: ru-nl.github.io
+
+Disallow: /harming/humans
+Disallow: /ignoring/human/orders
+Disallow: /harm/to/self
+
+Allow: /
+
+Sitemap: https://ru-nl.github.io/sitemap.xml

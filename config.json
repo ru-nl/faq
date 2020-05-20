@@ -1,0 +1,33 @@
+{
+    "baseurl": "https://ru-nl.github.io/",
+    "languageCode": "ru-ru",
+    "defaultContentLanguage": "ru",
+    "title": "Полезная информация о жизни в Нидерландах",
+    "theme": "techdoc",
+    "rssLimit": 100,
+    "enableGitInfo": true,
+    "markup": {
+        "tableOfContents": {
+            "startLevel": 2,
+            "endLevel": 4,
+            "ordered": false
+        }
+    },
+    "params": {
+        "title": "Полезная информация о жизни в Нидерландах",
+        "description": "Полезная информация о жизни в Нидерландах",
+        "github_repository": "https://github.com/ru-nl/faq",
+        "github_doc_repository": "https://github.com/ru-nl/faq",
+        "menu_style": "open-menu"
+    },
+    "menu": {
+        "main": [
+            {
+                "identifier": "home",
+                "name": "Главная",
+                "url": "/",
+                "weight": 1
+            }
+        ]
+    }
+}
