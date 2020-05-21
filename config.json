@@ -19,15 +19,5 @@
         "github_repository": "https://github.com/ru-nl/faq",
         "github_doc_repository": "https://github.com/ru-nl/faq",
         "menu_style": "open-menu"
-    },
-    "menu": {
-        "main": [
-            {
-                "identifier": "home",
-                "name": "Главная",
-                "url": "/",
-                "weight": 1
-            }
-        ]
     }
 }
