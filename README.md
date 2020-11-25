@@ -19,9 +19,8 @@
 2. Склонируйте этот репозиторий (или свой форк), и обновите подключенную тему hugo:
 
   ```
-  git clone https://github.com/ru-nl/faq.git
+  git clone --recurse-submodules https://github.com/ru-nl/faq.git
   cd faq
-  git submodule update --init --recursive
   ```
 3. Запустите `hugo serve`, чтобы получить доступ к сайту
 

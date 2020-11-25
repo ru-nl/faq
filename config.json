@@ -2,7 +2,7 @@
     "baseurl": "https://ru-nl.github.io/",
     "languageCode": "ru-ru",
     "defaultContentLanguage": "ru",
-    "title": "Полезная информация о жизни в Нидерландах",
+    "title": "ru-nl FAQ",
     "theme": "techdoc",
     "rssLimit": 100,
     "enableGitInfo": true,
