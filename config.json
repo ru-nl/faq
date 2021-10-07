@@ -13,11 +13,13 @@
             "ordered": false
         }
     },
+    "disableKinds": ["taxonomy", "term"],
     "params": {
         "title": "Полезная информация о жизни в Нидерландах",
         "description": "Полезная информация о жизни в Нидерландах",
         "github_repository": "https://github.com/ru-nl/faq",
         "github_doc_repository": "https://github.com/ru-nl/faq",
+        "rssFullContent": true,
         "menu_style": "open-menu"
     }
 }

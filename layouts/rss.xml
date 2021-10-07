@@ -1,0 +1,58 @@
+{{- $pctx := . -}}
+        {{- if .IsHome -}}{{ $pctx = .Site }}{{- end -}}
+        {{- $pages := $pctx.Pages -}}
+        {{- $limit := .Site.Config.Services.RSS.Limit -}}
+        {{- if ge $limit 1 -}}
+        {{- $pages = $pages | first $limit -}}
+        {{- end -}}
+        {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:yandex="http://news.yandex.ru" xmlns:media="http://search.yahoo.com/mrss/" xmlns:turbo="http://turbo.yandex.ru">
+    <channel>
+        <title>{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}</title>
+        <link>{{ .Permalink }}</link>
+        <description>Recent content {{ if ne  .Title  .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}</description>
+        <generator>Hugo -- gohugo.io</generator>{{ with .Site.LanguageCode }}
+        <language>{{.}}</language>{{end}}{{ with .Site.Author.email }}
+        <managingEditor>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</managingEditor>{{end}}{{ with .Site.Author.email }}
+        <webMaster>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</webMaster>{{end}}{{ with .Site.Copyright }}
+        <copyright>{{.}}</copyright>{{end}}{{ if not .Date.IsZero }}
+        <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
+        {{ with .OutputFormats.Get "RSS" }}
+        {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
+        {{ end }}
+        {{ range $pages }}
+        <item turbo="true">
+            <title>{{ .Title }}</title>
+            <link>{{ .Permalink }}</link>
+            <media:rating scheme="urn:simple">nonadult</media:rating>
+            <category>Technology</category>
+            <category>Технологии</category>
+            <turbo:source>{{ .Permalink }}</turbo:source>
+            <turbo:topic>{{ .Title }}</turbo:topic>{{ if not .Date.IsZero}}
+            <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>{{end}}
+            {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
+            <guid>{{ .Permalink }}</guid>
+            {{ if .Site.Params.rssFullContent }}
+            <description>{{ .Content | htmlEscape }}</description>
+            {{ else }}
+            <description>{{ .Summary | html }}</description>
+            {{ end }}
+            <turbo:content>
+                {{- printf "<![CDATA[" | safeHTML }}
+            <header><h1>{{ .Title }}</h1></header>
+			{{ .Content }}
+        {{- printf "]]>" | safeHTML }}
+            </turbo:content>
+            {{- with .Resources.ByType "image" }}
+            {{- range . }}
+            {{- if not (in .MediaType "image/webp") }}
+            <enclosure url="{{ .Permalink }}" length="{{ len .Content }}" type="{{ .MediaType }}"/>
+            {{- end }}
+            {{- end }}
+            {{- else }}
+            <enclosure url="{{ .Site.Params.image | absURL }}" length="438598" type="image/jpg"/>
+            {{- end }}
+        </item>
+        {{ end }}
+    </channel>
+</rss>
