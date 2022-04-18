@@ -1,6 +1,4 @@
 # Полезная информация о жизни в Нидерландах
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fru-nl%2Ffaq.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fru-nl%2Ffaq?ref=badge_shield)
-
 
 В этом репозитории находится исходный код сайта [https://ru-nl.github.io](https://ru-nl.github.io).
 
@@ -32,7 +30,3 @@
 
 После шагов выше, сайт будет доступен по адресу [http://127.0.0.1:1313/](http://127.0.0.1:1313/)
 и будет автоматически обновляться, когда вы будете сохранять изменения к файлам в репозитории.
-
-
-## License
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fru-nl%2Ffaq.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fru-nl%2Ffaq?ref=badge_large)
