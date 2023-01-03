@@ -1,5 +1,5 @@
 User-agent: *
-Host: ru-nl.github.io
+Host: ru-faq.nl
 
 Disallow: /harming/humans
 Disallow: /ignoring/human/orders
@@ -7,4 +7,4 @@ Disallow: /harm/to/self
 
 Allow: /
 
-Sitemap: https://ru-nl.github.io/sitemap.xml
+Sitemap: https://ru-faq.nl/sitemap.xml
