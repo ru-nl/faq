@@ -19,6 +19,7 @@
         "description": "Полезная информация о жизни в Нидерландах",
         "github_repository": "https://github.com/ru-nl/faq",
         "github_doc_repository": "https://github.com/ru-nl/faq",
+        "github_doc_repository_path": "content/",
         "rssFullContent": true,
         "menu_style": "open-menu"
     }

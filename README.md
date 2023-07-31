@@ -26,6 +26,9 @@
 
   ```
   hugo serve
+  # альтернатива без установки Hugo, используя докер
+  # требует удаления опции enableGitInfo в config.json
+  docker run --rm -it -v $(pwd):/src -p 1313:1313 klakegg/hugo:latest server
   ```
 
 После шагов выше, сайт будет доступен по адресу [http://127.0.0.1:1313/](http://127.0.0.1:1313/)
