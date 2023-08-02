@@ -29,8 +29,8 @@ description: Полезная информация о переезде в Нид
 
 ## Материалы для чтения, PhD
 
-- https://habr.com/ru/articles/199214/
-- https://medium.com/job-abroad/аспирантура-в-нидерландах-поиск-документы-подача-заявки-на-phd-7b86dfbbd221
-- https://www.studyinnl.org/dutch-education/phd
-- https://www.findaphd.com/guides/phd-study-in-netherlands
-- https://www.phdstudies.ru/aspirantura/niderlandy
+- [Аспирантура в Голландии: Kак (поиск, собеседование, оформление) - Habr](https://habr.com/ru/articles/199214/)
+- [Аспирантура в Нидерландах — Поиск, Документы, Подача Заявки на PhD - Medium](https://medium.com/job-abroad/аспирантура-в-нидерландах-поиск-документы-подача-заявки-на-phd-7b86dfbbd221)
+- [PhD - Official studying in NL website](https://www.studyinnl.org/dutch-education/phd)
+- [PhD Study in the Netherlands - A Guide for 2023](https://www.findaphd.com/guides/phd-study-in-netherlands)
+- [PhD программы в Нидерландах - поиск от keg.com](https://www.phdstudies.ru/aspirantura/niderlandy)
