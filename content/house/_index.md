@@ -21,7 +21,7 @@ description: Всё о покупке, продаже и аренде жилья
 - Подписание документов о передаче жилья в ваше пользование,обычно сразу после финального осмотра.
 
 ### National Mortgage Guarantee
-Чтобы на неё податься нужно чтобы и ипотека, и рыночная цена дома были ниже установленной [NHG](https://www.nhg.nl/) суммы, в 2021 году [325 тысяч](https://www.abnamro.nl/en/personal/mortgages/buying-a-house/dutch-national-mortgage-guarantee/index.html). Рыночная цена узнается через новый appraisal report. 
+Чтобы на неё податься нужно чтобы и ипотека, и рыночная цена дома были ниже установленной [NHG](https://www.nhg.nl/) суммы, в 2023 году [405 тысяч](https://www.abnamro.nl/en/personal/mortgages/buying-a-house/dutch-national-mortgage-guarantee/index.html). Рыночная цена узнается через новый appraisal report. 
 
 ## Продажа
 
