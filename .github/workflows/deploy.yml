@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Git checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
 
@@ -13,7 +13,7 @@ jobs:
         run: git submodule update --init --recursive
 
       - name: Setup hugo
-        uses: peaceiris/actions-hugo@v2
+        uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "0.121.2"
 
@@ -21,7 +21,7 @@ jobs:
         run: hugo --minify --environment production
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           personal_token: ${{ secrets.DEPLOY_TOKEN }}
           external_repository: ru-nl/ru-nl.github.io
