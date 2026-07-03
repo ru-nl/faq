@@ -60,4 +60,4 @@ description: Инструкция по выходу из гражданства 
 
 Заполните заявление на выход из гражданства [по образцу на сайте](https://netherlands.mid.ru/ru/consular-services/consulate-ru/citizenship/vykhod_iz_grazhdanstva_rf/). Распечатать нужно с двух сторон.
 
-3 фотографии такие же, [как на нидерландский паспорт](https://www.rijksoverheid.nl/onderwerpen/paspoort-en-identiteitskaart/eisen-pasfoto-paspoort-id-kaart).
+3 фотографии такие же, [как на нидерландский паспорт](https://www.rijksoverheid.nl/themas/migratie-en-reizen/paspoort-en-identiteitskaart/eisen-pasfoto-paspoort-id-kaart).
