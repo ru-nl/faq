@@ -5,7 +5,7 @@ description: Всё о покупке, продаже и аренде жилья
 
 ## Покупка
 
-Гид в одном файле: [скачать PDF](house-buying-guide-nl.pdf)
+Гид в одном файле: [скачать PDF](/house/house-buying-guide-nl.pdf)
 
 Основные шаги:
 
