@@ -1,6 +1,6 @@
 {
     "baseurl": "https://ru-faq.nl/",
-    "languageCode": "ru-ru",
+    "locale": "ru-ru",
     "defaultContentLanguage": "ru",
     "title": "ru-nl FAQ",
     "theme": "techdoc",
