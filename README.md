@@ -8,7 +8,7 @@
 закомитьте их и отправьте [PR-реквест](https://github.com/ru-nl/faq/pulls) к главному репозиторию.
 
 После принятия вашего PR-реквеста, будет автоматически [сгенерирован](https://github.com/ru-nl/ru-nl.github.io)
-новый сайт, и изменения станут видны на странице <https://ru-faq.nl>).
+новый сайт, и изменения станут видны на странице <https://ru-faq.nl>.
 
 ## Инструкции по локальному запуску
 
@@ -27,8 +27,7 @@
   ```
   hugo serve
   # альтернатива без установки Hugo, используя докер
-  # требует удаления опции enableGitInfo в config.json
-  docker run --rm -it -v $(pwd):/src -p 1313:1313 klakegg/hugo:latest server
+  docker run --rm -it -v "$(pwd)":/project -p 127.0.0.1:1313:1313 ghcr.io/gohugoio/hugo:v0.166.0 server --bind 0.0.0.0
   ```
 
 После шагов выше, сайт будет доступен по адресу [http://127.0.0.1:1313/](http://127.0.0.1:1313/)
