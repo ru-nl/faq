@@ -30,7 +30,7 @@ jobs:
         if: github.event_name == 'push'
         uses: peaceiris/actions-gh-pages@84c30a85c19949d7eee79c4ff27748b70285e453 # v4.1.0
         with:
-          personal_token: ${{ secrets.DEPLOY_TOKEN }}
+          deploy_key: ${{ secrets.DEPLOY_KEY }}
           external_repository: ru-nl/ru-nl.github.io
           publish_dir: ./public
           user_name: ru-nl deploy bot
